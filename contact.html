@@ -3,25 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Ask Git Questions</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
+    </nav>
     <header>
-        <h1>Contact Us</h1>
+        <h1>Ask Your Git Questions</h1>
     </header>
     <main>
-        <form>
-            <label for="name">Name:</label>
+        <p>Have questions about Git? Stuck on a command? Fill out the form below and we'll help you out!</p>
+        <form action="#" method="post">
+            <label for="name">Your Name:</label>
             <input type="text" id="name" name="name" required>
 
-            <label for="email">Email:</label>
+            <label for="email">Your Email:</label>
             <input type="email" id="email" name="email" required>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+            <label for="topic">Topic:</label>
+            <select id="topic" name="topic">
+                <option value="basics">Git Basics</option>
+                <option value="commands">Git Commands</option>
+                <option value="branching">Branching and Merging</option>
+                <option value="remote">Working with Remotes</option>
+                <option value="other">Other</option>
+            </select>
 
-            <button type="submit">Send</button>
+            <label for="question">Your Question:</label>
+            <textarea id="question" name="question" rows="5" required></textarea>
+
+            <button type="submit">Submit Question</button>
         </form>
+        <section>
+            <h2>Common Git Questions</h2>
+            <details>
+                <summary>How do I undo a commit?</summary>
+                <p>Use <code>git reset --soft HEAD~1</code> to undo the last commit but keep changes staged, or <code>git reset --hard HEAD~1</code> to completely remove it.</p>
+            </details>
+            <details>
+                <summary>What does 'git pull' do?</summary>
+                <p><code>git pull</code> fetches changes from the remote repository and merges them into your current branch.</p>
+            </details>
+            <details>
+                <summary>How do I create a new branch?</summary>
+                <p>Use <code>git checkout -b new-branch-name</code> to create and switch to a new branch.</p>
+            </details>
+        </section>
+        <p><a href="index.html">Back to Home</a> | <a href="about.html">Learn Git Basics</a></p>
     </main>
 </body>
 </html>

@@ -3,24 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Git Learning Website</title>
+    <title>Git Learning Hub</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
     </nav>
-    <h1>Welcome to My Git Learning Website</h1>
-    <p>This is a simple website I'm building while learning Git version control.</p>
-    <p>Here are some key points about Git:</p>
-    <ul>
-        <li>Git is a distributed version control system.</li>
-        <li>It tracks changes in files over time.</li>
-        <li>You can create branches for different features.</li>
-        <li>Collaboration is easy with remote repositories.</li>
-    </ul>
-    <p>Feel free to explore the About and Contact pages!</p>
+    <header>
+        <h1>Welcome to Git Learning Hub</h1>
+        <p>Your ultimate resource for mastering Git version control</p>
+    </header>
+    <section id="basics">
+        <h2>Git Basics</h2>
+        <p>Git is a distributed version control system that tracks changes in your code over time. It allows multiple developers to work on the same project without conflicts.</p>
+        <ul>
+            <li><strong>Repository:</strong> A folder where Git tracks your files</li>
+            <li><strong>Commit:</strong> A snapshot of your changes</li>
+            <li><strong>Branch:</strong> A separate line of development</li>
+            <li><strong>Merge:</strong> Combining changes from different branches</li>
+        </ul>
+    </section>
+    <section id="commands">
+        <h2>Essential Git Commands</h2>
+        <div class="command-list">
+            <h3>Getting Started</h3>
+            <code>git init</code> - Initialize a new repository<br>
+            <code>git clone &lt;url&gt;</code> - Clone an existing repository<br>
+            <code>git status</code> - Check the status of your files
+        </div>
+        <div class="command-list">
+            <h3>Making Changes</h3>
+            <code>git add &lt;file&gt;</code> - Stage files for commit<br>
+            <code>git commit -m "message"</code> - Commit staged changes<br>
+            <code>git log</code> - View commit history
+        </div>
+        <div class="command-list">
+            <h3>Branching</h3>
+            <code>git branch</code> - List branches<br>
+            <code>git checkout &lt;branch&gt;</code> - Switch branches<br>
+            <code>git merge &lt;branch&gt;</code> - Merge branches
+        </div>
+    </section>
+    <section id="resources">
+        <h2>Learning Resources</h2>
+        <p>Check out our <a href="about.html">Git Basics</a> page for detailed tutorials and examples.</p>
+        <p>Have questions? Visit our <a href="contact.html">Ask Questions</a> page.</p>
+    </section>
 </body>
+</html>
 </html>
