@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git Status Feature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
+    </nav>
+    <header>
+        <h1>Git Status: Track Your Repository State</h1>
+    </header>
+    <main>
+        <section>
+            <h2>What is Git Status?</h2>
+            <p>The <code>git status</code> command shows the current state of your working directory and staging area. It's one of the most frequently used Git commands.</p>
+        </section>
+        <section>
+            <h2>Basic Usage</h2>
+            <pre><code>git status</code></pre>
+            <p>This command displays:</p>
+            <ul>
+                <li>Current branch</li>
+                <li>Untracked files</li>
+                <li>Modified files</li>
+                <li>Staged files</li>
+                <li>Status compared to remote</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Understanding the Output</h2>
+            <h3>Untracked Files</h3>
+            <pre><code>Untracked files:
+  (use "git add &lt;file&gt;..." to include in what will be committed)
+        newfile.txt</code></pre>
+            <p>These are new files Git doesn't know about yet.</p>
+
+            <h3>Modified Files</h3>
+            <pre><code>Changes not staged for commit:
+  (use "git add &lt;file&gt;..." to update what will be committed)
+  (use "git restore &lt;file&gt;..." to discard changes in working directory)
+        modified:   index.html</code></pre>
+            <p>These files have been changed but not staged.</p>
+
+            <h3>Staged Files</h3>
+            <pre><code>Changes to be committed:
+  (use "git restore --staged &lt;file&gt;..." to unstage)
+        modified:   index.html</code></pre>
+            <p>These changes are ready to be committed.</p>
+        </section>
+        <section>
+            <h2>Advanced Options</h2>
+            <ul>
+                <li><code>git status --short</code> or <code>git status -s</code>: Concise output</li>
+                <li><code>git status --porcelain</code>: Machine-readable format</li>
+                <li><code>git status --ignored</code>: Show ignored files</li>
+                <li><code>git status --ahead-behind</code>: Show ahead/behind remote</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Practical Examples</h2>
+            <h3>Short Status</h3>
+            <pre><code>$ git status -s
+ M index.html
+?? newfile.txt
+ A staged.txt</code></pre>
+            <p>Legend: M=modified, A=added, ??=untracked</p>
+
+            <h3>After Adding Files</h3>
+            <pre><code>$ git add .
+$ git status
+On branch dev
+Changes to be committed:
+  (use "git restore --staged &lt;file&gt;..." to unstage)
+        new file:   newfile.txt
+        modified:   index.html</code></pre>
+        </section>
+        <section>
+            <h2>Best Practices</h2>
+            <ul>
+                <li>Run <code>git status</code> frequently to stay aware of your repository state</li>
+                <li>Use <code>git status -s</code> for quick checks</li>
+                <li>Always check status before committing</li>
+                <li>Understand the difference between staged and unstaged changes</li>
+            </ul>
+        </section>
+        <nav class="module-nav">
+            <a href="index.html">Back to Home</a> |
+            <a href="module2.html">Related: Basic Commands</a> |
+            <a href="contact.html">Ask Questions</a>
+        </nav>
+    </main>
+</body>
+</html>
