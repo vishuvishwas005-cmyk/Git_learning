@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 6: Git Best Practices</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
+    </nav>
+    <header>
+        <h1>Module 6: Git Best Practices</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Commit Best Practices</h2>
+            <ul>
+                <li>Write clear, descriptive commit messages</li>
+                <li>Keep commits focused on single changes</li>
+                <li>Use present tense: "Add feature" not "Added feature"</li>
+                <li>Reference issues: "Fix #123: resolve login bug"</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Branching Strategy</h2>
+            <h3>Git Flow:</h3>
+            <ul>
+                <li><code>main:</code> Production-ready code</li>
+                <li><code>develop:</code> Integration branch</li>
+                <li><code>feature/*:</code> New features</li>
+                <li><code>hotfix/*:</code> Critical fixes</li>
+                <li><code>release/*:</code> Release preparation</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Pull Request Guidelines</h2>
+            <ul>
+                <li>Provide clear descriptions</li>
+                <li>Reference related issues</li>
+                <li>Keep PRs small and focused</li>
+                <li>Request reviews from appropriate team members</li>
+                <li>Test thoroughly before submitting</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Repository Organization</h2>
+            <ul>
+                <li>Use <code>.gitignore</code> to exclude unnecessary files</li>
+                <li>Include <code>README.md</code> with project description</li>
+                <li>Use <code>CONTRIBUTING.md</code> for contribution guidelines</li>
+                <li>Maintain a <code>CHANGELOG.md</code> for releases</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Collaboration Tips</h2>
+            <ul>
+                <li>Communicate with your team</li>
+                <li>Don't force push to shared branches</li>
+                <li>Keep branches up to date with main</li>
+                <li>Use code reviews effectively</li>
+                <li>Resolve conflicts promptly</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Common Mistakes to Avoid</h2>
+            <ul>
+                <li>Committing large binary files</li>
+                <li>Using generic commit messages like "fix"</li>
+                <li>Working directly on main branch</li>
+                <li>Not pulling before pushing</li>
+                <li>Ignoring merge conflicts</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Useful Git Aliases</h2>
+            <pre><code>git config --global alias.co checkout
+git config --global alias.br branch
+git config --global alias.ci commit
+git config --global alias.st status</code></pre>
+        </section>
+        <section>
+            <h2>Further Learning</h2>
+            <ul>
+                <li><a href="https://git-scm.com/book" target="_blank">Pro Git Book</a></li>
+                <li><a href="https://learngitbranching.js.org/" target="_blank">Learn Git Branching</a></li>
+                <li><a href="https://github.com/" target="_blank">GitHub</a> for practice</li>
+            </ul>
+        </section>
+        <nav class="module-nav">
+            <a href="module5.html">Previous: Advanced Features</a> |
+            <a href="index.html">Back to Modules</a> |
+            <a href="contact.html">Ask Questions</a>
+        </nav>
+    </main>
+</body>
+</html>

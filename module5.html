@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 5: Advanced Git Features</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
+    </nav>
+    <header>
+        <h1>Module 5: Advanced Git Features</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Rebasing</h2>
+            <p>Rebasing rewrites commit history by moving commits to a new base:</p>
+            <pre><code>git checkout feature-branch
+git rebase main</code></pre>
+            <p>Interactive rebase to edit commits:</p>
+            <pre><code>git rebase -i HEAD~3</code></pre>
+        </section>
+        <section>
+            <h2>Stashing Changes</h2>
+            <p>Temporarily save uncommitted changes:</p>
+            <pre><code>git stash</code></pre>
+            <p>Apply stashed changes:</p>
+            <pre><code>git stash apply</code></pre>
+            <p>List stashes:</p>
+            <pre><code>git stash list</code></pre>
+        </section>
+        <section>
+            <h2>Resetting and Reverting</h2>
+            <p>Soft reset (keep changes):</p>
+            <pre><code>git reset --soft HEAD~1</code></pre>
+            <p>Hard reset (lose changes):</p>
+            <pre><code>git reset --hard HEAD~1</code></pre>
+            <p>Revert a commit (creates new commit):</p>
+            <pre><code>git revert commit-hash</code></pre>
+        </section>
+        <section>
+            <h2>Cherry Picking</h2>
+            <p>Apply specific commits from another branch:</p>
+            <pre><code>git cherry-pick commit-hash</code></pre>
+        </section>
+        <section>
+            <h2>Resolving Merge Conflicts</h2>
+            <p>When conflicts occur:</p>
+            <ol>
+                <li>Identify conflicted files</li>
+                <li>Edit files to resolve conflicts</li>
+                <li>Stage resolved files</li>
+                <li>Complete the merge/rebase</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Git Bisect</h2>
+            <p>Find the commit that introduced a bug:</p>
+            <pre><code>git bisect start
+git bisect bad
+git bisect good commit-hash</code></pre>
+        </section>
+        <section>
+            <h2>Git Hooks</h2>
+            <p>Automate tasks with scripts in <code>.git/hooks/</code>:</p>
+            <ul>
+                <li><code>pre-commit:</code> Run before committing</li>
+                <li><code>post-commit:</code> Run after committing</li>
+                <li><code>pre-push:</code> Run before pushing</li>
+            </ul>
+        </section>
+        <nav class="module-nav">
+            <a href="module4.html">Previous: Remotes</a> |
+            <a href="index.html">Back to Modules</a> |
+            <a href="module6.html">Next: Best Practices</a>
+        </nav>
+    </main>
+</body>
+</html>

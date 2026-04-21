@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2: Basic Git Commands</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
+    </nav>
+    <header>
+        <h1>Module 2: Basic Git Commands</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Initializing a Repository</h2>
+            <p>Create a new Git repository in your project folder:</p>
+            <pre><code>git init</code></pre>
+            <p>This creates a hidden <code>.git</code> folder that tracks your files.</p>
+        </section>
+        <section>
+            <h2>Checking Repository Status</h2>
+            <p>See the current state of your files:</p>
+            <pre><code>git status</code></pre>
+            <p>This shows untracked, modified, and staged files.</p>
+        </section>
+        <section>
+            <h2>Adding Files to Staging</h2>
+            <p>Stage specific files:</p>
+            <pre><code>git add filename.txt</code></pre>
+            <p>Stage all files:</p>
+            <pre><code>git add .</code></pre>
+        </section>
+        <section>
+            <h2>Committing Changes</h2>
+            <p>Save your staged changes:</p>
+            <pre><code>git commit -m "Your descriptive commit message"</code></pre>
+            <p>Good commit messages are clear and concise.</p>
+        </section>
+        <section>
+            <h2>Viewing Commit History</h2>
+            <p>See all commits:</p>
+            <pre><code>git log</code></pre>
+            <p>View a compact log:</p>
+            <pre><code>git log --oneline</code></pre>
+        </section>
+        <section>
+            <h2>Practical Exercise</h2>
+            <ol>
+                <li>Create a new folder and navigate to it</li>
+                <li>Run <code>git init</code></li>
+                <li>Create a file (e.g., README.md)</li>
+                <li>Check <code>git status</code></li>
+                <li>Add the file with <code>git add .</code></li>
+                <li>Commit with <code>git commit -m "Add README"</code></li>
+                <li>View history with <code>git log</code></li>
+            </ol>
+        </section>
+        <nav class="module-nav">
+            <a href="module1.html">Previous: Installation</a> |
+            <a href="index.html">Back to Modules</a> |
+            <a href="module3.html">Next: Branching</a>
+        </nav>
+    </main>
+</body>
+</html>

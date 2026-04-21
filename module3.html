@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 3: Branching & Merging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
+    </nav>
+    <header>
+        <h1>Module 3: Branching & Merging</h1>
+    </header>
+    <main>
+        <section>
+            <h2>What are Branches?</h2>
+            <p>Branches allow you to work on different features or fixes simultaneously without affecting the main codebase.</p>
+            <ul>
+                <li><strong>main/master:</strong> The default branch</li>
+                <li><strong>feature branches:</strong> For new features</li>
+                <li><strong>bugfix branches:</strong> For fixing bugs</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Creating and Switching Branches</h2>
+            <p>Create a new branch:</p>
+            <pre><code>git branch feature-name</code></pre>
+            <p>Switch to a branch:</p>
+            <pre><code>git checkout feature-name</code></pre>
+            <p>Create and switch in one command:</p>
+            <pre><code>git checkout -b feature-name</code></pre>
+        </section>
+        <section>
+            <h2>Listing Branches</h2>
+            <p>See all branches:</p>
+            <pre><code>git branch</code></pre>
+            <p>See all branches including remote:</p>
+            <pre><code>git branch -a</code></pre>
+        </section>
+        <section>
+            <h2>Merging Branches</h2>
+            <p>Merge a feature branch into main:</p>
+            <pre><code>git checkout main
+git merge feature-name</code></pre>
+            <p>Types of merges:</p>
+            <ul>
+                <li><strong>Fast-forward:</strong> When no commits on main since branching</li>
+                <li><strong>Three-way merge:</strong> Creates a merge commit</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Handling Merge Conflicts</h2>
+            <p>When files conflict:</p>
+            <ol>
+                <li>Git will mark conflicts in files</li>
+                <li>Edit files to resolve conflicts</li>
+                <li>Stage resolved files: <code>git add file.txt</code></li>
+                <li>Complete merge: <code>git commit</code></li>
+            </ol>
+        </section>
+        <section>
+            <h2>Deleting Branches</h2>
+            <p>Delete a merged branch:</p>
+            <pre><code>git branch -d feature-name</code></pre>
+            <p>Force delete (if not merged):</p>
+            <pre><code>git branch -D feature-name</code></pre>
+        </section>
+        <nav class="module-nav">
+            <a href="module2.html">Previous: Basic Commands</a> |
+            <a href="index.html">Back to Modules</a> |
+            <a href="module4.html">Next: Working with Remotes</a>
+        </nav>
+    </main>
+</body>
+</html>

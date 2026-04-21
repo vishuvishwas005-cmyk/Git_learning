@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 1: Git Installation & Setup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
+    </nav>
+    <header>
+        <h1>Module 1: Git Installation & Setup</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Installing Git</h2>
+            <h3>On Windows:</h3>
+            <ol>
+                <li>Download Git from <a href="https://git-scm.com/download/win" target="_blank">git-scm.com</a></li>
+                <li>Run the installer and follow the setup wizard</li>
+                <li>Choose your preferred text editor (VS Code recommended)</li>
+                <li>Complete the installation</li>
+            </ol>
+            <h3>On macOS:</h3>
+            <ol>
+                <li>Install Homebrew: <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code></li>
+                <li>Install Git: <code>brew install git</code></li>
+            </ol>
+            <h3>On Linux (Ubuntu/Debian):</h3>
+            <ol>
+                <li>Update package list: <code>sudo apt update</code></li>
+                <li>Install Git: <code>sudo apt install git</code></li>
+            </ol>
+        </section>
+        <section>
+            <h2>Configuring Git</h2>
+            <p>After installation, set up your identity:</p>
+            <pre><code>git config --global user.name "Your Full Name"
+git config --global user.email "your.email@example.com"</code></pre>
+            <p>Verify your configuration:</p>
+            <pre><code>git config --global --list</code></pre>
+        </section>
+        <section>
+            <h2>Setting Up SSH Keys (Optional but Recommended)</h2>
+            <ol>
+                <li>Generate SSH key: <code>ssh-keygen -t ed25519 -C "your.email@example.com"</code></li>
+                <li>Add to SSH agent: <code>ssh-add ~/.ssh/id_ed25519</code></li>
+                <li>Copy public key: <code>cat ~/.ssh/id_ed25519.pub</code></li>
+                <li>Add to GitHub/GitLab in Settings > SSH Keys</li>
+            </ol>
+        </section>
+        <nav class="module-nav">
+            <a href="index.html">Back to Modules</a> |
+            <a href="module2.html">Next: Basic Commands</a>
+        </nav>
+    </main>
+</body>
+</html>

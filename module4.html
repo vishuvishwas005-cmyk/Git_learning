@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4: Working with Remotes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">Git Basics</a>
+        <a href="contact.html">Ask Questions</a>
+    </nav>
+    <header>
+        <h1>Module 4: Working with Remotes</h1>
+    </header>
+    <main>
+        <section>
+            <h2>What are Remote Repositories?</h2>
+            <p>Remote repositories are versions of your project hosted on the internet (GitHub, GitLab, Bitbucket). They enable collaboration and backup.</p>
+        </section>
+        <section>
+            <h2>Adding a Remote</h2>
+            <p>Connect your local repo to a remote:</p>
+            <pre><code>git remote add origin https://github.com/username/repo-name.git</code></pre>
+            <p>List remotes:</p>
+            <pre><code>git remote -v</code></pre>
+        </section>
+        <section>
+            <h2>Cloning a Repository</h2>
+            <p>Download an existing repository:</p>
+            <pre><code>git clone https://github.com/username/repo-name.git</code></pre>
+            <p>This creates a local copy with remote tracking.</p>
+        </section>
+        <section>
+            <h2>Pushing Changes</h2>
+            <p>Upload your commits to the remote:</p>
+            <pre><code>git push origin main</code></pre>
+            <p>Push a new branch:</p>
+            <pre><code>git push -u origin feature-branch</code></pre>
+        </section>
+        <section>
+            <h2>Pulling Changes</h2>
+            <p>Download and merge remote changes:</p>
+            <pre><code>git pull origin main</code></pre>
+            <p>Fetch without merging:</p>
+            <pre><code>git fetch origin</code></pre>
+        </section>
+        <section>
+            <h2>Forking and Pull Requests</h2>
+            <ol>
+                <li>Fork the repository on GitHub</li>
+                <li>Clone your fork: <code>git clone https://github.com/your-username/repo-name.git</code></li>
+                <li>Create a feature branch</li>
+                <li>Make changes and push</li>
+                <li>Create a Pull Request on GitHub</li>
+            </ol>
+        </section>
+        <section>
+            <h2>Common Remote Commands</h2>
+            <ul>
+                <li><code>git remote rename origin upstream</code> - Rename remote</li>
+                <li><code>git remote remove origin</code> - Remove remote</li>
+                <li><code>git push origin --delete branch-name</code> - Delete remote branch</li>
+            </ul>
+        </section>
+        <nav class="module-nav">
+            <a href="module3.html">Previous: Branching</a> |
+            <a href="index.html">Back to Modules</a> |
+            <a href="module5.html">Next: Advanced Features</a>
+        </nav>
+    </main>
+</body>
+</html>
